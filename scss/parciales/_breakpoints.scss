@@ -1,0 +1,39 @@
+@media (min-width: 993px) {
+    
+    .countryList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .countryArt img {
+        width: 362px;
+    }
+
+    .cards-general{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .competenciasList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .competenciasArt img {
+        width: 362px;
+    }
+
+ }
+
+ @media (min-width: 1400px) {
+    
+    .countryList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+    .cards-general{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .competenciasArt img {
+        width: 362px;
+    }
+ }

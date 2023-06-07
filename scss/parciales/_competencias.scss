@@ -1,0 +1,22 @@
+.competenciasList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.competenciasArt img {
+    width: 326px;
+    border-radius: 18px;
+    border: 2px solid orangered;
+}
+
+.titleComp {
+    color: #fffdfd;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 1rem;
+}

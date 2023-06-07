@@ -1,0 +1,271 @@
+/* Variables */
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Body */
+body {
+  background-color: #413D3D;
+}
+
+/* Header */
+.header {
+  height: 80px;
+  background-color: #413D3D;
+  max-width: 100%;
+}
+
+/* Main */
+.main-general-index {
+  background-color: #413D3D;
+  padding: 40px 0 50px 0;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.cards-general {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.main-general {
+  padding: 40px 0 50px 0;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.citaTexto {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: left;
+  color: #fffdfd;
+}
+
+.banner {
+  /* background-image: url(../Final/Assets/batallagallos3.jpg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-main {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 64px;
+}
+
+.text-desc {
+  color: #fffdfd;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  width: 85%;
+}
+
+.freestyle-desc {
+  background-color: #5E3B4E;
+  display: flex;
+  width: 100%;
+  height: 11rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+  bottom: 65px;
+}
+
+.noticias {
+  color: #fffdfd;
+  text-decoration: none;
+}
+
+.newsArt img {
+  width: 250px;
+  height: auto;
+  border-radius: 18px;
+}
+
+.newsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-row-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.text {
+  color: #fffdfd;
+  text-decoration: none;
+}
+
+.last-finals {
+  background-color: #5E3B4E;
+  display: flex;
+  width: 100%;
+  height: 11rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+/* Paises */
+.titulos-main {
+  color: #fffdfd;
+  font-size: 28px;
+  padding-left: 20px;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.titleCountry {
+  color: #fffdfd;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.countryList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.countryArt img {
+  width: 326px;
+  border-radius: 18px;
+  border: 2px solid #fffdfd;
+}
+
+.card-news {
+  border-radius: 12px;
+  border: 5px solid #5E3B4E;
+  width: 18rem;
+}
+
+.button-card {
+  border: #5E3B4E 1px solid;
+  background-color: #5E3B4E;
+}
+
+.button-card:hover {
+  border: #7e1a51 1px solid;
+  background-color: #7e1a51;
+}
+
+.card-body {
+  background-color: #cdcdcd;
+}
+
+.artistContainer {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+}
+
+.h3-artistName {
+  color: #fffdfd;
+  text-decoration: none;
+  position: relative;
+  left: 200px;
+}
+
+.artistContainer img {
+  width: 100%;
+}
+
+/* Competencias */
+.competenciasList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.competenciasArt img {
+  width: 326px;
+  border-radius: 18px;
+  border: 2px solid orangered;
+}
+
+.titleComp {
+  color: #fffdfd;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 1rem;
+} /* Contacto */
+.form-img {
+  background-image: url(../Assets/agradecimientos.webp);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+/* Footer */
+.footerGeneral {
+  height: 8rem;
+}
+
+.social {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.social > a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  padding: 0 3rem;
+}
+
+/* Breakpoints */
+@media (min-width: 993px) {
+  .countryList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .countryArt img {
+    width: 362px;
+  }
+  .cards-general {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .competenciasList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .competenciasArt img {
+    width: 362px;
+  }
+}
+@media (min-width: 1400px) {
+  .countryList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cards-general {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .competenciasArt img {
+    width: 362px;
+  }
+}
+
+/*# sourceMappingURL=paginalinda.css.map */
