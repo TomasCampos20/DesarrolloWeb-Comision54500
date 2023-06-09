@@ -1,38 +1,43 @@
 @media (min-width: 993px) {
-    
     .countryList {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .countryArt img {
         width: 362px;
     }
-
     .cards-general{
         grid-template-columns: repeat(2, 1fr);
     }
-
     .competenciasList {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .competenciasArt img {
         width: 362px;
     }
-
+    .firstContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text-1{
+        padding-right: 2rem;
+    }
+    .newsList{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .text-desc{
+        width: 85%;
+     }
+    .freestyle-desc{
+        height: 11rem;
+     }
  }
 
  @media (min-width: 1400px) {
-    
     .countryList {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    
     .cards-general{
         grid-template-columns: repeat(3, 1fr);
     }
-
     .competenciasArt img {
         width: 362px;
     }

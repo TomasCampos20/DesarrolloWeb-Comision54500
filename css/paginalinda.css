@@ -17,6 +17,12 @@ body {
   height: 80px;
   background-color: #413D3D;
   max-width: 100%;
+  z-index: 1;
+}
+
+.header-gazir {
+  position: relative;
+  bottom: 25px;
 }
 
 /* Main */
@@ -25,6 +31,10 @@ body {
   padding: 40px 0 50px 0;
   min-height: 100vh;
   margin: 0 auto;
+}
+
+.main-general-index img {
+  z-index: 2;
 }
 
 .cards-general {
@@ -51,7 +61,7 @@ body {
 }
 
 .banner {
-  /* background-image: url(../Final/Assets/batallagallos3.jpg); */
+  background-image: url(../Final/Assets/batallagallos3.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,14 +79,12 @@ body {
   text-align: center;
   text-decoration: none;
   margin: auto;
-  width: 85%;
 }
 
 .freestyle-desc {
   background-color: #5E3B4E;
   display: flex;
   width: 100%;
-  height: 11rem;
   flex-wrap: nowrap;
   align-items: center;
   position: relative;
@@ -96,7 +104,7 @@ body {
 
 .newsList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
   grid-row-gap: 3rem;
   justify-items: center;
@@ -120,29 +128,12 @@ body {
 }
 
 /* Paises */
-.titulos-main {
-  color: #fffdfd;
-  font-size: 28px;
-  padding-left: 20px;
-  margin-bottom: 4rem;
-  text-align: center;
-}
-
 .titleCountry {
   color: #fffdfd;
   font-size: 18px;
   text-decoration: none;
   text-align: center;
   padding-bottom: 1rem;
-}
-
-.countryList {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-row-gap: 3rem;
-  justify-items: center;
-  align-items: center;
 }
 
 .countryArt img {
@@ -161,7 +152,6 @@ body {
   border: #5E3B4E 1px solid;
   background-color: #5E3B4E;
 }
-
 .button-card:hover {
   border: #7e1a51 1px solid;
   background-color: #7e1a51;
@@ -210,7 +200,9 @@ body {
   text-decoration: none;
   text-align: center;
   padding-bottom: 1rem;
-} /* Contacto */
+}
+
+/* Contacto */
 .form-img {
   background-image: url(../Assets/agradecimientos.webp);
   background-size: cover;
@@ -238,6 +230,72 @@ body {
   padding: 0 3rem;
 }
 
+/* Mixins */
+/* Titulos */
+/* Grids */
+/* images */
+/* Llamados */
+.titulos-main {
+  color: #fffdfd;
+  font-size: 28px;
+  padding-left: 20px;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.titulos-main-gazir {
+  color: #fffdfd;
+  font-size: 28px;
+  padding-left: 30px;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.countryList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.firstContent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-1 img {
+  width: 625px;
+  border: 2px solid #fffdfd;
+}
+
+.img-2 img {
+  width: 625px;
+  border: 2px solid #fffdfd;
+}
+
+/*Gazir*/
+/*Texto*/
+.text-1 {
+  color: #fffdfd;
+  padding-left: 2rem;
+}
+
+.text-2 {
+  color: #fffdfd;
+  padding-left: 2rem;
+}
+
+.text-1 p, .text-2 p {
+  text-decoration: none;
+  font-size: 20px;
+}
+
 /* Breakpoints */
 @media (min-width: 993px) {
   .countryList {
@@ -254,6 +312,21 @@ body {
   }
   .competenciasArt img {
     width: 362px;
+  }
+  .firstContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text-1 {
+    padding-right: 2rem;
+  }
+  .newsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .text-desc {
+    width: 85%;
+  }
+  .freestyle-desc {
+    height: 11rem;
   }
 }
 @media (min-width: 1400px) {

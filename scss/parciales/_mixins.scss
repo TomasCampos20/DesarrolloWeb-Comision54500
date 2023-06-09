@@ -1,0 +1,42 @@
+/* Titulos */
+@mixin titulos($padding, $aling){
+    color: $color-words;
+    font-size: 28px;
+    padding-left: $padding;
+    margin-bottom: 4rem;
+    text-align: $aling;
+}
+/* Grids */
+@mixin grid(){
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+/* images */
+@mixin images(){
+    width: 625px;
+    border: 2px solid $color-words;
+}
+
+/* Llamados */
+.titulos-main{
+    @include titulos(20px,center);
+}
+.titulos-main-gazir{
+    @include titulos(30px,left);
+}
+.countryList{
+    @include grid();
+}
+.firstContent{
+    @include grid();
+}
+.img-1 img{
+    @include images();
+}
+.img-2 img{
+    @include images();
+}
