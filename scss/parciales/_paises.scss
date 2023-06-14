@@ -12,8 +12,8 @@
 }
 .card-news{
     border-radius: 12px;
-    border: 5px solid #5E3B4E;
-    width: 18rem;
+    border: 5px solid $color-button-cards;
+    width: 23rem;
  }
 .button-card{
     border: $color-button-cards 1px solid;
@@ -40,3 +40,4 @@
 .artistContainer img {
     width: 100%;
 }
+

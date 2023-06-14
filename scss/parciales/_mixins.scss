@@ -5,6 +5,7 @@
     padding-left: $padding;
     margin-bottom: 4rem;
     text-align: $aling;
+    margin-top: 30px;
 }
 /* Grids */
 @mixin grid(){
@@ -19,6 +20,17 @@
 @mixin images(){
     width: 625px;
     border: 2px solid $color-words;
+}
+@mixin card($color){
+    background-color: $color;
+}
+
+@mixin images-mid($width, $left, $top){
+    width: $width;
+    height: 100%;
+    position: relative;
+    left: $left;
+    top: $top;
 }
 
 /* Llamados */
@@ -39,4 +51,16 @@
 }
 .img-2 img{
     @include images();
+}
+.card-body{
+    @include card($color-card);
+}
+.card-body-champ{
+    @include card($color-gral);
+}
+.img-mid1{
+    @include images-mid(720px, 45px, 6px);
+}
+.img-mid2{
+    @include images-mid(775px, 25px, 23px);
 }

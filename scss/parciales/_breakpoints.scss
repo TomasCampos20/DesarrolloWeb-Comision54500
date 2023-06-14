@@ -29,6 +29,16 @@
     .freestyle-desc{
         height: 11rem;
      }
+    .grid-champ{
+        grid-template-columns: repeat(5, 1fr);
+        padding: 5px;
+    }
+    .info-grid1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info-grid2{
+        grid-template-columns: repeat(2, 1fr);
+    }
  }
 
  @media (min-width: 1400px) {
@@ -41,4 +51,4 @@
     .competenciasArt img {
         width: 362px;
     }
- }
+}
