@@ -39,6 +39,9 @@
     .info-grid2{
         grid-template-columns: repeat(2, 1fr);
     }
+    .title-champs{
+        text-align: center;
+    }
  }
 
  @media (min-width: 1400px) {

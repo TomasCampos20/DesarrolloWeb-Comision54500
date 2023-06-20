@@ -5,10 +5,19 @@
     text-align: center;
     padding-bottom: 1rem;
 }
+.countryArt{
+    position: relative;
+    display: inline-block;
+    &:hover .img-country{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
 .countryArt img {
     width: 326px;
     border-radius: 18px;
     border: 2px solid $color-words;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .card-news{
     border-radius: 12px;

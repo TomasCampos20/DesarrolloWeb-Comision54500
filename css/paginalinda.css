@@ -230,10 +230,20 @@ nav {
   padding-bottom: 1rem;
 }
 
+.countryArt {
+  position: relative;
+  display: inline-block;
+}
+.countryArt:hover .img-country {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .countryArt img {
   width: 326px;
   border-radius: 18px;
   border: 2px solid #fffdfd;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-news {
@@ -597,6 +607,9 @@ nav {
   }
   .info-grid2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .title-champs {
+    text-align: center;
   }
 }
 @media (min-width: 1400px) {
