@@ -8,13 +8,27 @@
 }
 .competenciasArt img {
     width: 326px;
-    border-radius: 18px;
-    border: 2px solid orangered;
+    border: 2px solid $color-border-comp;
 }
 .titleComp {
-    color: #fffdfd;
+    color: $color-words;
     font-size: 18px;
     text-decoration: none;
     text-align: center;
     padding-bottom: 1rem;
+}
+.competenciasArt{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    &:hover .grayscale{
+        filter: none;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+}
+.grayscale{
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
+    border-radius: 18px;
 }

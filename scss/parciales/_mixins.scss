@@ -25,14 +25,6 @@
     background-color: $color;
 }
 
-@mixin images-mid($width, $left, $top){
-    width: $width;
-    height: 100%;
-    position: relative;
-    left: $left;
-    top: $top;
-}
-
 /* Llamados */
 .titulos-main{
     @include titulos(20px,center);
@@ -57,10 +49,4 @@
 }
 .card-body-champ{
     @include card($color-gral);
-}
-.img-mid1{
-    @include images-mid(720px, 45px, 6px);
-}
-.img-mid2{
-    @include images-mid(775px, 25px, 23px);
 }

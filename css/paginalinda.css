@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables */
 /* Reset */
 * {
@@ -94,6 +93,7 @@ nav {
   grid-row-gap: 3rem;
   justify-items: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 .main-general {
@@ -294,7 +294,6 @@ nav {
 
 .competenciasArt img {
   width: 326px;
-  border-radius: 18px;
   border: 2px solid orangered;
 }
 
@@ -304,6 +303,23 @@ nav {
   text-decoration: none;
   text-align: center;
   padding-bottom: 1rem;
+}
+
+.competenciasArt {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.competenciasArt:hover .grayscale {
+  filter: none;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 18px;
 }
 
 /* Contacto */
@@ -403,136 +419,59 @@ nav {
   background-color: white;
 }
 
-.img-mid1 {
-  width: 720px;
-  height: 100%;
-  position: relative;
-  left: 45px;
-  top: 6px;
-}
-
-.img-mid2 {
-  width: 775px;
-  height: 100%;
-  position: relative;
-  left: 25px;
-  top: 23px;
-}
-
 /*Gazir*/
-/*Texto*/
-.text-1 {
-  color: #fffdfd;
-  padding-left: 2rem;
-  text-align: center;
+.first-part {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.photo {
   overflow: hidden;
 }
 
-.text-2 {
-  color: #fffdfd;
-  padding-left: 2rem;
-  text-align: center;
-  overflow: hidden;
+.photo img {
+  width: 600px;
+  height: auto;
+  padding-left: 40px;
+  position: absolute;
 }
 
-.text-1 p, .text-2 p {
+.desc-1 {
+  text-align: center;
+  padding-right: 45px;
+  padding-top: 65px;
+  color: #fffdfd;
   text-decoration: none;
-  font-size: 20px;
 }
 
-.part-two {
-  background: linear-gradient(to bottom, #251d6f, #be539e);
-  width: 100%;
-  height: 108rem;
-  position: relative;
-  top: 3rem;
-}
-
-.part-three {
-  background: linear-gradient(to bottom, #251d6f, #be539e);
-  width: 100%;
-  height: 102rem;
-  position: relative;
-  top: 3rem;
-}
-
-.info-grid1 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
-}
-
-.biografia1 {
-  color: #fffdfd;
-  padding-left: 3rem;
-  position: relative;
-  top: 30px;
-}
-
-.elemento {
-  margin-right: 5px;
-  content: "✔";
-}
-
-.info-grid2 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
-}
-
-.biografia2 {
-  color: #fffdfd;
-  padding-left: 3rem;
-  position: relative;
-  top: 30px;
-}
-
-.biografia3 {
-  color: #fffdfd;
+.desc-2 {
   text-align: center;
+  color: #fffdfd;
+  text-decoration: none;
+  padding-left: 45px;
   padding-top: 100px;
-  overflow-y: scroll;
-}
-
-.biografia4 {
-  color: #fffdfd;
-  text-align: center;
-}
-
-.biografia5 {
-  color: #fffdfd;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.biografia5 {
-  color: #fffdfd;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.biografia6 {
-  color: #fffdfd;
-  text-align: center;
-  padding-top: 110px;
-}
-
-.img-1 {
-  overflow: hidden;
-}
-
-.img-2 {
-  overflow: hidden;
-}
-
-.right {
-  animation: slide-in-right 2s ease-out;
 }
 
 .left {
   animation: slide-in-left 2s ease-out;
 }
 
+.right {
+  animation: slide-in-right 2s ease-out;
+}
+
+.title-gazir {
+  text-decoration: none;
+  color: #fffdfd;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  animation: slide-in-top 2s ease-out;
+}
+
+/* KeyFrames */
 @keyframes slide-in-left {
   0% {
     transform: translateX(-100%);
@@ -549,23 +488,14 @@ nav {
     transform: translateX(0);
   }
 }
-.finalFMSesp {
-  position: relative;
-  display: inline-block;
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.finalFMSesp:hover .img-final {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.img-final {
-  width: 775px;
-  position: relative;
-  left: 415px;
-  top: 30px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
 /* Breakpoints */
 @media (min-width: 993px) {
   .countryList {
@@ -610,6 +540,9 @@ nav {
   }
   .title-champs {
     text-align: center;
+  }
+  .first-part {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1400px) {
