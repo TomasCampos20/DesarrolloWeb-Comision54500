@@ -3,29 +3,30 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
+    padding-bottom: 35rem;
 }
 .photo{
     overflow: hidden;
 }
 .photo img{
-    width: 600px;
+    width: 400px;
     height: auto;
-    padding-left: 40px;
     position: absolute;
+    border: 2px solid $color-words;
 }
 .desc-1{
     text-align: center;
-    padding-right: 45px;
-    padding-top: 65px;
     color: $color-words;
     text-decoration: none;
+    position: relative;
+    top: 15rem;
 }
 .desc-2{
     text-align: center;
     color: $color-words;
     text-decoration: none;
-    padding-left: 45px;
-    padding-top: 100px;
+    position: relative;
+    top: 15rem;
 }
 .left{
     animation: slide-in-left 2s ease-out;
@@ -36,10 +37,77 @@
 .title-gazir{
     text-decoration: none;
     color: $color-words;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     padding-top: 10px;
     animation: slide-in-top 2s ease-out;
+}
+.img-left{
+    left: 35px;
+    top: 150px;
+}
+.img-right{
+    right: 50px;
+    top: 50rem;
+}
+.titles-part{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-top: 4rem;
+}
+.titles{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.champs-gazir{
+    color: $color-words;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    left: 8px;
+}
+.champs-gazir p{
+    font-size: 20px;
+}
+.link{
+    position: relative;
+    display: inline-block;
+    &:hover .img-blon{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+.link img{
+    width: 90%;
+    border-radius: 18px;
+    border: 2px solid $color-words;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    left: 27px;
+}
+.degrade-block{
+    width: 100%;
+    background: linear-gradient(to bottom, $color-gradient-1, $color-gradient-2);
+    padding: 20px;
+}
+.carrusel-title{
+    color: $color-words;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.carrusel{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.carrusel img{
+    width: 50rem;
+    scroll-snap-align: center;
+    margin-right: 10px;
 }
 
 /* KeyFrames */

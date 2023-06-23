@@ -45,6 +45,9 @@
     text-align: center;
     text-decoration: none;
     margin: auto;
+    font-family: $font-title;
+    font-weight: 300;
+    font-size: 22px;
  }
  .freestyle-desc{
     background-color: $color-button-cards;
@@ -96,7 +99,7 @@
    padding: 5px;
 }
 .title-champs{
-   font-family: fuenteTitulos, sans-serif;
+   font-family: $font-title;
    color: $color-words;
    font-size: 28px;
    padding-left: 20px;

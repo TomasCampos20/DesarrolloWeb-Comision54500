@@ -1,4 +1,5 @@
-/* Variables */
+/* Variables */ /* Colours */
+/* Fonts */
 /* Reset */
 * {
   padding: 0;
@@ -48,19 +49,20 @@ nav {
 .nav-links li {
   margin-right: 20px;
   position: relative;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .nav-links li a {
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
   border-radius: 50px;
   transition: background-color 0.3s;
 }
 .nav-links li a:hover {
-  font-size: 18px;
+  font-size: 22px;
   background-color: #7e1a51;
   color: white;
 }
@@ -129,6 +131,9 @@ nav {
   text-align: center;
   text-decoration: none;
   margin: auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 .freestyle-desc {
@@ -188,7 +193,7 @@ nav {
 }
 
 .title-champs {
-  font-family: fuenteTitulos, sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #fffdfd;
   font-size: 28px;
   padding-left: 20px;
@@ -224,7 +229,8 @@ nav {
 /* Paises */
 .titleCountry {
   color: #fffdfd;
-  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
   text-decoration: none;
   text-align: center;
   padding-bottom: 1rem;
@@ -295,31 +301,16 @@ nav {
 .competenciasArt img {
   width: 326px;
   border: 2px solid orangered;
+  border-radius: 18px;
 }
 
 .titleComp {
   color: #fffdfd;
-  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
   text-decoration: none;
   text-align: center;
   padding-bottom: 1rem;
-}
-
-.competenciasArt {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-.competenciasArt:hover .grayscale {
-  filter: none;
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.grayscale {
-  filter: grayscale(100%);
-  transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
-  border-radius: 18px;
 }
 
 /* Contacto */
@@ -334,6 +325,7 @@ nav {
 
 .titulos-main-contacto {
   color: #fffdfd;
+  font-family: "Oswald", sans-serif;
   font-size: 28px;
   padding-left: 20px;
   margin-bottom: 4rem;
@@ -372,6 +364,7 @@ nav {
   margin-bottom: 4rem;
   text-align: center;
   margin-top: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .titulos-main-gazir {
@@ -381,6 +374,7 @@ nav {
   margin-bottom: 4rem;
   text-align: left;
   margin-top: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .countryList {
@@ -425,6 +419,7 @@ nav {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
+  padding-bottom: 35rem;
 }
 
 .photo {
@@ -432,26 +427,26 @@ nav {
 }
 
 .photo img {
-  width: 600px;
+  width: 400px;
   height: auto;
-  padding-left: 40px;
   position: absolute;
+  border: 2px solid #fffdfd;
 }
 
 .desc-1 {
   text-align: center;
-  padding-right: 45px;
-  padding-top: 65px;
   color: #fffdfd;
   text-decoration: none;
+  position: relative;
+  top: 15rem;
 }
 
 .desc-2 {
   text-align: center;
   color: #fffdfd;
   text-decoration: none;
-  padding-left: 45px;
-  padding-top: 100px;
+  position: relative;
+  top: 15rem;
 }
 
 .left {
@@ -465,10 +460,89 @@ nav {
 .title-gazir {
   text-decoration: none;
   color: #fffdfd;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   padding-top: 10px;
   animation: slide-in-top 2s ease-out;
+}
+
+.img-left {
+  left: 35px;
+  top: 150px;
+}
+
+.img-right {
+  right: 50px;
+  top: 50rem;
+}
+
+.titles-part {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding-top: 4rem;
+}
+
+.titles {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.champs-gazir {
+  color: #fffdfd;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  left: 8px;
+}
+
+.champs-gazir p {
+  font-size: 20px;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+}
+.link:hover .img-blon {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.link img {
+  width: 90%;
+  border-radius: 18px;
+  border: 2px solid #fffdfd;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  left: 27px;
+}
+
+.degrade-block {
+  width: 100%;
+  background: linear-gradient(to bottom, #45688e, #a690d2);
+  padding: 20px;
+}
+
+.carrusel-title {
+  color: #fffdfd;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.carrusel img {
+  width: 50rem;
+  scroll-snap-align: center;
+  margin-right: 10px;
 }
 
 /* KeyFrames */
@@ -544,6 +618,37 @@ nav {
   .first-part {
     grid-template-columns: repeat(2, 1fr);
   }
+  .photo img {
+    width: 600px;
+  }
+  .desc-1 {
+    top: 140px;
+    right: 20px;
+  }
+  .desc-2 {
+    top: 15rem;
+    left: 8px;
+  }
+  .img-left {
+    left: 40px;
+    top: 150px;
+  }
+  .img-right {
+    right: 40px;
+    top: 27rem;
+  }
+  .first-part {
+    padding-bottom: 27rem;
+  }
+  .titles-part {
+    grid-template-columns: repeat(2, auto);
+  }
+  .titles-part {
+    padding-top: 7rem;
+  }
+  .link img {
+    top: 80px;
+  }
 }
 @media (min-width: 1400px) {
   .countryList {
@@ -554,6 +659,25 @@ nav {
   }
   .competenciasArt img {
     width: 362px;
+  }
+  .desc-1 {
+    top: 120px;
+    right: 60px;
+  }
+  .desc-2 {
+    top: 17rem;
+    left: 60px;
+  }
+  .img-left {
+    left: 60px;
+    top: 150px;
+  }
+  .img-right {
+    right: 90px;
+    top: 27rem;
+  }
+  .link img {
+    top: 0;
   }
 }
 

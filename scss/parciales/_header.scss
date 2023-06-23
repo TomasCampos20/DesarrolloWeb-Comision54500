@@ -26,17 +26,18 @@ nav{
 .nav-links li{
     margin-right: 20px;
     position: relative;
-    bottom: 10px;
+    bottom: 15px;
 }
 .nav-links li a{
     text-decoration: none;
+    font-family: $font-title;
     color: $color-gral;
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
     border-radius: 50px;
     transition: background-color 0.3s;
     &:hover{
-        font-size: 18px;
+        font-size: 22px;
         background-color: $color-button-hover;
         color: $color-gral;
     }

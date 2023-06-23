@@ -45,6 +45,38 @@
     .first-part{
         grid-template-columns: repeat(2, 1fr);
     }
+    .photo img{
+        width: 600px;
+    }
+    .desc-1{
+        top: 140px;
+        right: 20px;
+    }
+    .desc-2{
+        top: 15rem;
+        left: 8px;
+    }
+    .img-left{
+        left: 40px;
+        top: 150px;
+    }
+    .img-right{
+        right: 40px;
+        top: 27rem;
+    }
+    .first-part{
+        padding-bottom: 27rem;
+    }
+    .titles-part{
+        grid-template-columns: repeat(2, auto);
+
+    }
+    .titles-part{
+        padding-top: 7rem;
+    }
+    .link img{
+        top: 80px;
+    }
  }
 
  @media (min-width: 1400px) {
@@ -56,5 +88,24 @@
     }
     .competenciasArt img {
         width: 362px;
+    }
+    .desc-1{
+        top: 120px;
+        right: 60px;
+    }
+    .desc-2{
+        top: 17rem;
+        left: 60px;
+    }
+    .img-left{
+        left: 60px;
+        top: 150px;
+    }
+    .img-right{
+        right: 90px;
+        top: 27rem;
+    }
+    .link img{
+        top: 0;
     }
 }
